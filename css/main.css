@@ -1,0 +1,109 @@
+h1{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 4em;
+    text-align: center;
+    padding-top: 1%;
+    /*This whole background thin is to give a rainbow color effect on the header text!! cool huh??!!!*/
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0.1, #f22), color-stop(0.15, #cef), color-stop(0.3, #f2f),       color-stop(0.45, #22f), color-stop(0.6, #222),color-stop(0.75, #ff2), color-stop(0.9, #ff2), color-stop(1, #f5f) );
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+#h2 {
+    font-family:font-family: 'Architects Daughter', cursive;
+    font-size: 2em;
+    font-weight: bolder;
+    text-align:center;
+    color: black;
+    background:yellow;
+    opacity: 0.5;
+}
+h2{ font-family:font-family: 'Architects Daughter', cursive;
+    font-size: 2em;
+    font-weight: bolder;
+    text-align:center;
+    color: blue;
+}
+input[type="text"]{
+            width: 25em;
+            height: 1.5em;
+            font-size: 1.5em;
+            background-color: lightyellow;
+            box-shadow: 2px 4px 2px #2572EB;
+            position: relative;
+}
+input[type="button"]{
+            border: none;
+            box-shadow:
+            width:8em;
+            height:2em;
+            background-color:lightgreen;
+            font-size:1.5em;
+            font-weight:bold;
+}
+body {
+        background:url('../img/fashion-shopping.jpg');
+}
+form{
+        margin-left:15%;
+}
+#shop-list{
+        width:30em;
+        height:20em;
+        float: left;
+        overflow: scroll;
+        
+}
+#completed_items {
+        float:right;
+        position:relative;
+          }
+#complete-list {
+        width:30em;
+        height:20em;
+        float:right;
+        overflow: scroll;
+}
+
+li{
+    font-size:2em;
+    font-family:'Coming Soon', cursive;
+    font-weight:bold;
+}
+
+#wish_list li {
+    font-size:2em;
+    font-family:'Coming Soon', cursive;
+    font-weight:bold;
+    position: relative;
+    height: 0.7em;
+    padding: 0.5em;
+    margin: 0.5em auto;
+}
+#wish_list li:nth-child(odd) {
+    background: rgb(173, 216, 227);
+    background: rgba(173, 216, 227, 0.8);
+}
+#wish_list li:nth-child(even) {
+    background: rgb(173, 216, 227);
+    background: rgba(173, 216, 227, 0.3);
+}
+#complete li {
+    font-size:2em;
+    font-family:'Coming Soon', cursive;
+    font-weight:bold;
+    position: relative;
+    height: 0.7em;
+    padding: 0.5em;
+    margin: 0.5em auto;
+}
+#complete li:nth-child(odd) {
+    background: rgba(227, 216, 173, 0.8);
+}
+#complete li:nth-child(even) {
+    background: rgba(227, 216, 173, 0.3);
+}
+
+#feedback_area {
+            display:inline-block;
+}
