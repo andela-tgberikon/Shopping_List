@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SHOPPING LIST TRACKER</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah|Architects+Daughter|Coming+Soon' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="script/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="script/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="script/jquery-ui.js"></script>
+    <script type="text/javascript" src="script/app.js"></script>
+    <header>
+      <h1>HAPPY SHOPPER!</h1>
+      <h2 id="h2"><span>Keep track of what you have bought and need to buy</span></h2>
+    </header>
+  </head>
+    <body>
+      <form>
+        <div id="search_area">
+            <input type="text" id="search_bar" placeholder="What do you want to buy?" required="true" pattern="[a-z, A-Z,">
+            <input type="button" value="Add To List" id="add_to_list"> 
+        </div>
+      </form>
+      <div id="feedback_area">
+        <div id="shop-list"><h2>What to buy..</h2>
+          <ul id="wish_list"></ul>
+          <input type="button" id="completed_items" value="FullFilled">
+        </div>
+        <div id="complete-list" class="sort"><h2>Fulfilled</h2>
+          <ul id="complete"></ul>
+          <input type="button" id="clear-fulfilled" value="Clear Fulfilled">
+        </div>
+        
+      </div>
+    </body>
+</html>

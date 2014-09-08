@@ -1,0 +1,60 @@
+$(document).ready(shop);
+
+        function shop (){
+          
+            $("#shop-list").hide();//Hide initial wish list until an item is added before it shown "Line 18"
+            $("#complete-list").hide();//Only after Items have been fulfilled and fulfil button clicked would it show "Line 24"
+            $("#completed_items").hide();
+          
+            $("#add_to_list").click(function(){
+              
+                 //get items atleast 2 characters long from textbox and append to Wish List section
+                    if($.trim($("#search_bar").val()).length < 2 ){
+                    alert("please Enter atleast two character words");}
+                        else{
+                                var value = $("#search_bar").val();
+                                var new_item = $("<li>" + "<input type=\"checkbox\" value=\"" + value + "\">" + value + "</li>");
+                                    new_item.appendTo("#wish_list");
+                                    $("#shop-list").show();
+                            }
+
+                // Clear item from the searchbar ready for the next input
+                $("#search_bar").val("");
+                $("#wish_list").sortable();//To easily reorder items in the list by click and drag
+                $("#completed_items").show();
+            });
+
+            //Append items to the fulfilled list when fulfiled button is clicked
+            $("#completed_items").click(function(){
+                    var items = $("#shop-list input:checked").parent();
+                        items.appendTo("#complete").slideDown();
+                    $("#complete-list").show();
+            });
+
+            //Clear all Items in the fulfilled field when the "Clear fulfilled" button is clicked
+            $("#clear-fulfilled").click(handleCompleteClick);
+            function handleCompleteClick() {
+                var items = $("#complete-list input:checked").parent();
+                items.slideUp(function() {
+                    $(this).remove();
+                });
+            }
+
+        }
+
+
+
+
+
+
+/*
+// Select/Deselect all when button is clicked
+function handleToggleAllClick() {
+    var inputs = $("#shopping_list input[type=checkbox]");
+    if ($(this).val() == "Select all") {
+        inputs = inputs.filter(":not(:checked)");
+    } else {
+        inputs = inputs.filter(":checked");
+    }
+    inputs.click();
+}*/
