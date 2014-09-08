@@ -6,8 +6,13 @@ h1{
     /*This whole background thin is to give a rainbow color effect on the header text!! cool huh??!!!*/
     background-image: -webkit-gradient( linear, left top, right top, color-stop(0.1, #f22), color-stop(0.15, #cef), color-stop(0.3, #f2f),       color-stop(0.45, #22f), color-stop(0.6, #222),color-stop(0.75, #ff2), color-stop(0.9, #ff2), color-stop(1, #f5f) );
     color:transparent;
+    background-image: gradient( linear, left top, right top, color-stop(0.1, #f22), color-stop(0.15, #cef), color-stop(0.3, #f2f),       color-stop(0.45, #22f), color-stop(0.6, #222),color-stop(0.75, #ff2), color-stop(0.9, #ff2), color-stop(1, #f5f) );
+    color:transparent;
     -webkit-background-clip: text;
     background-clip: text;
+}
+h3{
+    font-size: 2em;
 }
 #h2 {
     font-family:font-family: 'Architects Daughter', cursive;
