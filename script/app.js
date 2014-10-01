@@ -27,31 +27,14 @@ var shop = {
     var items = $("#shop-list input:checked").parent();
     items.appendTo("#complete").slideDown();
     $("#complete-list").show();
-    
+
   },
   clearFulfilled: function() {
     var items = $("#complete-list input:checked").parent();
     items.slideUp(function() {
       $(this).remove();
     });
+    
   }
 }
-
 $(document).ready(shop.start);
-
-
-
-
-
-
-/*
-// Select/Deselect all when button is clicked
-function handleToggleAllClick() {
-    var inputs = $("#shopping_list input[type=checkbox]");
-    if ($(this).val() == "Select all") {
-        inputs = inputs.filter(":not(:checked)");
-    } else {
-        inputs = inputs.filter(":checked");
-    }
-    inputs.click();
-}*/
