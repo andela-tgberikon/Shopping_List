@@ -3,6 +3,8 @@ h1{
     font-size: 4em;
     text-align: center;
     padding-top: 1%;
+    font-weight: bold;
+    min-width: 100%;
     /*This whole background thin is to give a rainbow color effect on the header text!! cool huh??!!!*/
     background-image: -webkit-gradient( linear, left top, right top, color-stop(0.1, #f22), color-stop(0.15, #cef), color-stop(0.3, #f2f),       color-stop(0.45, #22f), color-stop(0.6, #222),color-stop(0.75, #ff2), color-stop(0.9, #ff2), color-stop(1, #f5f) );
     color:transparent;
@@ -11,7 +13,7 @@ h1{
 }
 #h2 {
     font-family:font-family: 'Architects Daughter', cursive;
-    font-size: 2em;
+    font-size: 1.4em;
     font-weight: bolder;
     text-align:center;
     color: black;
@@ -42,7 +44,9 @@ input[type="button"]{
             font-weight:bold;
 }
 body {
-        background:url('../img/fashion-shopping.jpg');
+        background:url('../img/fashion-shopping.jpg') no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
 }
 form{
         margin-left:15%;
@@ -54,7 +58,17 @@ form{
         overflow: scroll;
         
 }
+#feedback_area{
+    display:inline-block;
+    margin-left: 13%;
+    margin-top: 5%;
+    background: rgba(0,0,0,0.5);
+}
+#search_area{
+    margin-left: 10%;
+}
 #completed_items {
+
         float:right;
         position:relative;
           }
@@ -102,8 +116,4 @@ li{
 }
 #complete li:nth-child(even) {
     background: rgba(227, 216, 173, 0.3);
-}
-
-#feedback_area {
-            display:inline-block;
 }
